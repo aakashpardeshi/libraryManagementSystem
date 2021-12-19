@@ -17,7 +17,7 @@
         while($result = $query->fetch()){      
             echo "<tr><td>".$result[$col]."</td></tr>";
         }
-        //store
+
    }
 ?>
 
