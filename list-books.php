@@ -9,11 +9,13 @@
         $query = $pdo->prepare('SELECT b_id, b_name, b_price, publish_year, total_copies, b_author FROM book 
         NATURAL JOIN book_category NATURAL JOIN publisher order by b_id asc, b_name asc');
 
+
         //execute the sql
         $query->execute();
         //fetch the result
         
         while($result = $query->fetch()){
+
             if($result["total_copies"] <= 0){
                 echo "<tr>"; 
                 echo "<td>".$result["b_id"]."</td>";
@@ -36,6 +38,7 @@
             }
            
            
+
         }
 
    }
@@ -89,6 +92,7 @@
           <th> Total Copies </th>
          <th> Author </th>
          <th>Action</th>
+
         </thead>
 
         <tbody>

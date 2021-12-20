@@ -3,6 +3,7 @@
    include('config.php');
    
    function getMembers(){
+
         $pdo = $GLOBALS['pdo'];
 
         //prepare a call
@@ -56,6 +57,7 @@
 
         <tbody>
             <?php getMembers()?>
+
         </tbody>
 
         </table>

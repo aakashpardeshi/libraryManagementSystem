@@ -16,4 +16,5 @@
     $query->bindParam('pub', $_POST['pub']);
     $query->execute();
     header("location:list-books.php?book=".$_POST['bname']);
+
 ?> 
