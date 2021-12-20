@@ -14,10 +14,10 @@
         
         while($result = $query->fetch()){
             echo "<tr>";      
-            echo "<td>".$result["m_id"]."</td>";
-            echo "<td>".$result["m_name"]."</td>";
             echo "<td>".$result["b_id"]."</td>";
             echo "<td>".$result["b_name"]."</td>";
+            echo "<td>".$result["m_id"]."</td>";
+            echo "<td>".$result["m_name"]."</td>";
             echo "<td>".$result["Return_Date"]."</td>";
             echo "<td>".$result["Late_Fees"]."</td>";
             echo "</tr>";
