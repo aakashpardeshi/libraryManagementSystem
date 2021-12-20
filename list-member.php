@@ -7,7 +7,7 @@
         $pdo = $GLOBALS['pdo'];
 
         //prepare a call
-        $query = $pdo->prepare('SELECT m_id,m_name,join_date FROM `member` ');
+        $query = $pdo->prepare('SELECT m_id,m_name,join_date FROM `member` order by join_date desc, m_id asc');
 
         //execute the sql
         $query->execute();
